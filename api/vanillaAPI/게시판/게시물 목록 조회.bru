@@ -5,7 +5,19 @@ meta {
 }
 
 get {
-  url: https://11.fesp.shop/posts
-  body: none
+  url: https://11.fesp.shop/posts?test=test
+  body: json
   auth: none
+}
+
+params:query {
+  test: test
+}
+
+body:json {
+  {
+    "type": "test",
+    "title": "자고싶네요.",
+    "content": "수업 끝나고 자도 될까요.."
+  }
 }
